@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app.routing.module';
 import { CursoModule } from './cursos/curso.module';
+import { AlunosModule } from './alunos/alunos.module';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { CursoModule } from './cursos/curso.module';
   imports: [
     BrowserModule,
     CursoModule,
+    AlunosModule,
     AppRoutingModule
   ],
   providers: [],
