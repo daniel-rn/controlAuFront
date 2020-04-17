@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-///import { AuthService } from './login/auth.service';
+import { AuthService } from './login/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -9,17 +9,17 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'rotas2';
 
-  mostrarMenu: boolean = true;
+  mostrarMenu: boolean = false;
 
 
-  // constructor(private authService: AuthService) {
+  constructor(private authService: AuthService) {
 
-  // }
+  }
 
-  // ngOnInit(){
-  //   this.authService.mostrarMenuEmitter.subscribe(
-  //     mostrar => this.mostrarMenu = mostrar
-  //   );
+  ngOnInit() {
+    this.authService.mostrarMenuEmitter.subscribe(
+      mostrar => this.mostrarMenu = mostrar
+    );
 
-//}
+  }
 }
