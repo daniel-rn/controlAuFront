@@ -7,9 +7,9 @@ import { AuthService } from './login/auth.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'rotas2';
+  title = 'ControlAu';
 
-  mostrarMenu: boolean = false;
+  mostrarMenu: boolean = true;
 
 
   constructor(private authService: AuthService) {

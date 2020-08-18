@@ -6,10 +6,11 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app.routing.module';
-import { CursoModule } from './cursos/curso.module';
-import { AlunosModule } from './alunos/alunos.module';
+import { EspelhoModule } from './espelho/espelho.module';
+import { RegistrosModule } from './registros/registros.module';
 import { AuthService } from './login/auth.service';
 import { AuthGuard } from './guard/auth.guard';
+import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
 
 
 @NgModule({
@@ -17,12 +18,13 @@ import { AuthGuard } from './guard/auth.guard';
     AppComponent,
     HomeComponent,
     LoginComponent,
+    PaginaNaoEncontradaComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    CursoModule,
-    AlunosModule,
+    EspelhoModule,
+    RegistrosModule,
     AppRoutingModule
   ],
   providers: [AuthService, AuthGuard],

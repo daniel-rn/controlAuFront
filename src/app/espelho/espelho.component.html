@@ -1,0 +1,5 @@
+<div class="collection">
+    <a class="collection-item" *ngFor="let espelho of data"
+    [routerLink]="['/espelho', espelho.id]">{{ espelho.empregado.nome + " | tipo registro: " + espelho.tipo + " | data/hora: " + espelho.data}}</a>
+  </div>
+  
